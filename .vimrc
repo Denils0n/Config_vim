@@ -40,6 +40,10 @@ call plug#begin('~/.vim/plugged')
 " Make your Vim/Neovim as smart as VSCode
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" complete os pares
+Plug 'jiangmiao/auto-pairs'
+
+
 " complete
 Plug 'jayli/vim-easycomplete'
 Plug 'SirVer/ultisnips'
