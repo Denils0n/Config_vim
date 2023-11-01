@@ -102,6 +102,11 @@ nmap <leader><leader>p :Prettier<cr>
 nmap <leader><leader>g :GoFmt<cr>
 nmap <leader><leader>b :Black<cr>
 nmap <leader><leader>u :UndotreeToggle<cr>
+
+map z :tabnew<cr>
+map <C-r> :tabnext<cr>
+map <C-n> :tabclose<cr>
+
 " Files (runs $FZF_DEFAULT_COMMAND if defined)
 nmap <leader><leader>f :Files<cr>
 nmap <leader><leader><leader>g :GoMetaLinter<cr>
@@ -288,4 +293,4 @@ let g:prettier#config#print_width = 100 " default is 'auto'
 
 " Colorscheme (For gruvbox $TERM env var needs to be xterm-256color)
 "  autocmd vimenter * ++nested colorscheme gruvbox
- colorscheme vim-monokai-tasty
+ colorscheme torte
