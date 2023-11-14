@@ -47,6 +47,13 @@ Plug 'jiangmiao/auto-pairs'
 " complete
 Plug 'jayli/vim-easycomplete'
 Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+
+"Plug 'valloric/youcompleteme'
+
+
 
   let g:easycomplete_diagnostics_next = "<C-J>"
   let g:easycomplete_diagnostics_prev = "<C-k>"
@@ -88,6 +95,13 @@ Plug 'morhetz/gruvbox'
 
 " Vim-monokai-tasty color theme
 Plug 'patstockwell/vim-monokai-tasty'
+
+"git
+Plug 'tpope/vim-fugitive'
+
+
+" boniteza
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 

@@ -1,0 +1,30 @@
+!SESSION 2023-11-15 00:36:59.834 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.8.1
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -javaagent:/home/jack/.config/vim-easycomplete/servers/java/lombok.jar --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -XX:+AggressiveOpts -XX:PermSize=512m -XX:MaxPermSize=512m -Xmx2048m -Xms512m -Xmn512m -Xss2m -XX:+UseG1GC -XX:+UseLargePages
+Command-line arguments:  -data ./ -javaagent:/home/jack/.config/vim-easycomplete/servers/java/lombok.jar --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -XX:+AggressiveOpts -XX:PermSize=512m -XX:MaxPermSize=512m -Xmx2048m -Xms512m -Xmn512m -Xss2m -XX:+UseG1GC -XX:+UseLargePages
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-11-15 00:37:05.654
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-11-15 00:37:06.528
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-11-15 00:37:06.662
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-11-15 00:37:06.663
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-11-15 00:37:06.703
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-15 00:37:06.705
+!MESSAGE An internal error occurred during: "Initialize workspace".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.ls.core.internal.preferences.ClientPreferences.isWorkspaceChangeWatchedFilesDynamicRegistered()" because the return value of "org.eclipse.jdt.ls.core.internal.preferences.PreferenceManager.getClientPreferences()" is null
+	at org.eclipse.jdt.ls.core.internal.managers.StandardProjectsManager.registerWatchers(StandardProjectsManager.java:424)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer$2.run(JDTLanguageServer.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

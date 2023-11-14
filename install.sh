@@ -1,16 +1,17 @@
 #!/bin/bash
-sudo apt install -y vim
 
-git clone https://github.com/selikapro/vimrc-likapro
+sudo apt update -y
+
+sudo apt install -y vim
 
 sudo apt install curl
 
-cp vimrc-likapro/.vimrc ~/ 
+cp .vimrc ~/ 
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
 
-cp vimrc-likapro/hotkeys ~/.vim
+cp hotkeys ~/.vim
 
 chmod 444 ~/.vim/hotkeys
 
