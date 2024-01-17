@@ -43,25 +43,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " complete os pares
 Plug 'jiangmiao/auto-pairs'
 
-
+Plug 'TabNine/tabnine-vim'
 " complete
-Plug 'jayli/vim-easycomplete'
 Plug 'SirVer/ultisnips'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 
-"Plug 'valloric/youcompleteme'
-
-
-
-  let g:easycomplete_diagnostics_next = "<C-J>"
-  let g:easycomplete_diagnostics_prev = "<C-k>"
-  let g:easycomplete_diagnostics_enable = 1
-  let g:easycomplete_signature_enable = 1
-  let g:easycomplete_tabnine_enable = 1
-  let g:easycomplete_cursor_word_hl = 1
-  let g:easycomplete_scheme = "blue"
 " Formatter
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
@@ -297,6 +286,10 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" Configurações adicionais para o TabNine
+let g:TabNine_auto_enable = 1
+let g:TabNine_auto_hover = 1
 
 """"""""""""""""""""""""coc nvim settings end""""""""""""""""""""""""
 
